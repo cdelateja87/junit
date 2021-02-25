@@ -1,3 +1,6 @@
+variables:
+  DISABLE_AUTH: "true"
+
 stages:
   - build
   - test

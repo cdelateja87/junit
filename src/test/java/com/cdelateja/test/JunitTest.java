@@ -9,8 +9,8 @@ public class JunitTest {
 
     @Test
     public void justAnExample() {
-//        String variable = System.getenv("DISABLE_AUTH");
-//        System.out.println(variable);
-//        assertEquals(variable, "true");
+        String variable = System.getenv("DISABLE_AUTH");
+        System.out.println(variable);
+        assertEquals(variable, "true");
     }
 }
