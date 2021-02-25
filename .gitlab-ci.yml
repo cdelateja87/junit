@@ -1,0 +1,20 @@
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  tags:
+    - ssh
+  script:
+    - echo "Building"
+    - mvn complie
+
+test:
+  stage: test
+  tags:
+    - ssh
+  script:
+    - echo "Testing"
+    - mvn clean test
+
