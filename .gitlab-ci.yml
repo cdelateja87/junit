@@ -8,7 +8,7 @@ build:
     - ssh
   script:
     - echo "Building"
-    - mvn complie
+    - mvn compile
 
 test:
   stage: test
