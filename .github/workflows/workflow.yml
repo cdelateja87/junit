@@ -1,0 +1,25 @@
+name: Redis Service Example
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: my job
+    runs-on: windows-2019
+
+    steps:
+      - uses: actions/checkout@v1
+      - run: echo "Building"
+      - run: mvn compile
+
+
+  test:
+    runs-on: windows-2019
+
+    steps:
+      - uses: actions/checkout@v1
+      - run: echo "Testing"
+      - run: mvn clean test
