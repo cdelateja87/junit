@@ -9,7 +9,6 @@ jobs:
   build:
     name: my job
     runs-on: windows-2019
-
     steps:
       - uses: actions/checkout@v1
       - run: echo "Building"
@@ -18,7 +17,6 @@ jobs:
 
   test:
     runs-on: windows-2019
-
     steps:
       - uses: actions/checkout@v1
       - run: echo "Testing"
